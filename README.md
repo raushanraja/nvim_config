@@ -1,4 +1,9 @@
 - add basic directory inside .config/nvim
     - init.lua
-    - after/plugin/
+    - after/plugins/
     - lua/
+        - config/
+            - init.lua
+            - options.lua
+            - remap.lua
+        - plugins/
