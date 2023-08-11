@@ -7,5 +7,6 @@
   "nordic.nvim": { "branch": "main", "commit": "7f76513a6ad048e286cf0e6ba33cc787bd2322b7" },
   "onenord": { "branch": "main", "commit": "222839e392a79c48ce0f52d754cccbc79322c01f" },
   "rose-pine": { "branch": "main", "commit": "e29002cbee4854a9c8c4b148d8a52fae3176070f" },
-  "tokyonight.nvim": { "branch": "main", "commit": "1ee11019f8a81dac989ae1db1a013e3d582e2033" }
+  "tokyonight.nvim": { "branch": "main", "commit": "1ee11019f8a81dac989ae1db1a013e3d582e2033" },
+  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" }
 }
