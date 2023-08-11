@@ -1,0 +1,4 @@
+- add basic directory inside .config/nvim
+    - init.lua
+    - after/plugin/
+    - lua/
