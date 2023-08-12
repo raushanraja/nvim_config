@@ -2,6 +2,8 @@ local lsp = require('lsp-zero').preset('recommended')
 
 lsp.on_attach(function(client, bufnr)
     local opts = lsp.default_keymaps({ buffer = bufnr, remap = false })
+
+    -- This is doing auto-formatting using the current attached lsp (if they provide formatting)
     lsp.buffer_autoformat()
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
