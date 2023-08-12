@@ -1,10 +1,13 @@
-local lsp = require('lsp-zero').preset('recommended')
+local lsp = require('lsp-zero').preset({})
+local telescope = require("telescope.builtin")
 
 lsp.on_attach(function(client, bufnr)
     local opts = lsp.default_keymaps({ buffer = bufnr, remap = false })
 
     -- This is doing auto-formatting using the current attached lsp (if they provide formatting)
     -- lsp.buffer_autoformat()
+    vim.keymap.set("n", "<leader>a", function() vim.lsp.buf.code_action() end, opts)
+    vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "<leader>fs", "<cmd>SymbolsOutline<cr>", opts)
@@ -15,6 +18,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set("n", "<leader>gr", function() telescope.lsp_references() end, opts)
 end)
 
 
