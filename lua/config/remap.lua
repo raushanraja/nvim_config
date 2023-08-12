@@ -77,6 +77,7 @@ keymap("n", "<m-t>", "<cmd> lua TTerm(101, 'horizontal')<cr>", nonopts)
 keymap("t", "<m-t>", "<cmd> lua TTerm(101, 'horizontal')<cr>", nonopts)
 -- keymap("n", "<m-h>", "<cmd> lua TTerm(102, 'vertical',70)<cr>", nonopts)
 -- keymap("t", "<m-h>", "<cmd> lua TTerm(102, 'vertical',70)<cr>", nonopts)
+keymap("n", "tt", "<cmd> lua TTerm(103, 'float')<cr>", nonopts)
 keymap("n", "<c-t>", "<cmd> lua TTerm(103, 'float')<cr>", nonopts)
 keymap("t", "<c-t>", "<cmd> lua TTerm(103, 'float')<cr>", nonopts)
 
