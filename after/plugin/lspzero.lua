@@ -2,7 +2,7 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(_, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
-    local opts = {buffer = bufnr}
+    local opts = { buffer = bufnr }
     -- This is doing auto-formatting using the current attached lsp (if they provide formatting)
     -- lsp.buffer_autoformat()
     vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<cr>', opts)
@@ -24,7 +24,7 @@ lsp.format_on_save({
         timeout_ms = 10000,
     },
     servers = {
-        ['lua-ls'] = { 'lua' },
+        ['lua_ls'] = { 'lua' },
     }
 })
 
