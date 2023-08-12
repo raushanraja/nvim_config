@@ -7,3 +7,10 @@
             - options.lua
             - remap.lua
         - plugins/
+
+- formattings:
+    - update after/formatting.lua to include formatting for other files
+    - see how the python formatting is being done
+        - add the language
+        - import the formatter from the fomatter.filetypes.(RepalceME_FOMATTER)
+        - add the formatter to the filetype
