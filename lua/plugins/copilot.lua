@@ -4,10 +4,18 @@ return {
         cmd = "Copilot",
         opts = { suggestion = { auto_trigger = true, debounce = 150 } },
     },
+
+    {
+        "zbirenbaum/copilot-cmp",
+        config = function()
+            require("copilot_cmp").setup()
+        end
+    },
+
     {
         "hrsh7th/nvim-cmp",
         dependencies = { "zbirenbaum/copilot.lua" },
-        event = "InsertEnter",     -- Required
+        event = "InsertEnter", -- Required
         opts = function(_, opts)
             local cmp, copilot = require "cmp", require "copilot.suggestion"
             local snip_status_ok, luasnip = pcall(require, "luasnip")
