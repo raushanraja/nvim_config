@@ -1,5 +1,17 @@
 return {
     {
+        "savq/melange-nvim",
+        lazy = false,
+        name = 'melange',
+        priority = 1000,
+    },
+    {
+        "Shatur/neovim-ayu",
+        lazy = false,
+        name = 'ayu',
+        priority = 1000,
+    },
+    {
         "catppuccin/nvim",
         lazy = false,
         name = 'catppuccin',

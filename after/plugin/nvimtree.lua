@@ -12,6 +12,7 @@ require("nvim-tree").setup {
         update_root = false,
     },
     view = {
+        signcolumn = "yes",
         adaptive_size = true,
         side = "left",
         width = 30,
@@ -22,7 +23,7 @@ require("nvim-tree").setup {
         ignore = false,
         show_on_dirs = true,
         show_on_open_dirs = true,
-        timeout = 200,
+        timeout = 2000,
     },
     modified = {
         enable = true,
@@ -65,7 +66,7 @@ require("nvim-tree").setup {
         },
         icons = {
             webdev_colors = true,
-            git_placement = "signcolumn",
+            git_placement = "before",
             modified_placement = "after",
             padding = " ",
             symlink_arrow = " ➛ ",
@@ -92,7 +93,7 @@ require("nvim-tree").setup {
                     symlink_open = icons.ui.FolderOpen,
                 },
                 git = {
-                    unstaged = icons.git.FileUnstaged,
+                    unstaged = icons.ui.BoldClose,
                     staged = icons.git.FileStaged,
                     unmerged = icons.git.FileUnmerged,
                     renamed = icons.git.FileRenamed,
