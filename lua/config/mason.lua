@@ -1,4 +1,5 @@
 return {
+    "autoflake8",
     "autopep8",
     "lua-language-server",
     "css-lsp",
