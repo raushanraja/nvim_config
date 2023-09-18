@@ -1,5 +1,6 @@
 local util = require("formatter.util")
 local python_formatter = require("formatter.filetypes.python").autopep8
+local rust_formatter = require("formatter.filetypes.rust").rustfmt
 local js_formatter = require("config.formatters").prettierjs
 local util = require "formatter.util"
 
@@ -22,6 +23,7 @@ require("formatter").setup({
     filetype = {
         python = { autoflake, python_formatter },
         javascript = { js_formatter },
-        javascriptreact = { js_formatter }
+        javascriptreact = { js_formatter },
+        rust = { rust_formatter }
     }
 })
