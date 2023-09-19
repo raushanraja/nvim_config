@@ -17,7 +17,7 @@ function Colors(color)
 
         --- You can override specific color groups to use other groups or a hex color
         --- function will be called with a ColorScheme table
-        ---@param colors ColorScheme
+        -- -@param colors ColorScheme
         -- on_colors = function(colors) end,
 
         --- You can override specific highlights to use other groups or a hex color
@@ -37,9 +37,11 @@ function Colors(color)
 
     -- color = color or "onenord"
     -- color = color or "catppuccin-mocha"
+    color = color or "caret"
     -- color = color or "tokyonight"
     -- color = color or "rose-pine"
-    color = color or "ayu-dark"
+    -- color = color or "catppuccin-latte"
+    vim.o.background = "light"
     vim.cmd.colorscheme(color)
 
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

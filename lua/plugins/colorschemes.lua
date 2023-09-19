@@ -1,5 +1,11 @@
 return {
     {
+        'projekt0n/caret.nvim',
+        lazy = false,
+        name = 'caret',
+        priority = 1000,
+    },
+    {
         "savq/melange-nvim",
         lazy = false,
         name = 'melange',
