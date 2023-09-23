@@ -31,3 +31,5 @@ vim.opt.colorcolumn = "80"
 -- search case pattern option
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.opt.title = true
