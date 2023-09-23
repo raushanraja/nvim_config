@@ -96,3 +96,6 @@ keymap("n", "<leader>tt", "<cmd> TroubleToggle<cr>", nonopts)
 keymap("n", "<leader>td", "<cmd> TroubleToggle  document_diagnostics<cr>", nonopts)
 keymap("n", "<leader>tw", "<cmd> TroubleToggle  workspace_diagnostics<cr>", nonopts)
 keymap("n", "<leader>ta", "<cmd> TroubleToggle  quickfix<cr>", nonopts)
+
+-- Telescope
+keymap("n", "<leader>tp", "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<cr>", nonopts)

@@ -41,7 +41,7 @@ function Colors(color)
     -- color = color or "tokyonight"
     -- color = color or "rose-pine"
     -- color = color or "catppuccin-latte"
-    vim.o.background = "light"
+    -- vim.o.background = "light"
     vim.cmd.colorscheme(color)
 
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
