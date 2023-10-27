@@ -1,4 +1,6 @@
 vim.g.mapleader = " "
+vim.g.astro_typescript = 'enable'
+vim.g.astro_stylus = 'enable'
 
 local opts = { noremap = true, silent = true }
 local nonopts = { noremap = true, silent = false }

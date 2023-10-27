@@ -34,6 +34,7 @@ vim.opt.smartcase = true
 
 vim.opt.title = true
 
+-- vim.opt.foldmethod = "indent"
 
 
 if vim.fn.has('title') then

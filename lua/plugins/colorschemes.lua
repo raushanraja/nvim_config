@@ -49,12 +49,14 @@ return {
         priority = 1000,
     },
 
+
     {
-        'shaunsingh/nord.nvim',
+        'arcticicestudio/nord-vim',
         lazy = false,
         name = 'nord',
         priority = 1000,
     },
+
 
     {
         'rmehri01/onenord.nvim',
