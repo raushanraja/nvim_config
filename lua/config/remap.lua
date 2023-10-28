@@ -101,3 +101,9 @@ keymap("n", "<leader>ta", "<cmd> TroubleToggle  quickfix<cr>", nonopts)
 
 -- Telescope
 keymap("n", "<leader>tp", "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<cr>", nonopts)
+
+
+-- Gitsigns
+keymap("n", "<leader>hp", "<cmd>lua require('gitsigns').preview_hunk()<cr>", nonopts)
+keymap("n", "<leader>hr", "<cmd>lua require('gitsigns').reset_hunk()<cr>", nonopts)
+keymap("n", "<leader>hn", "<cmd>lua require('gitsigns').next_hunk()<cr>", nonopts)
