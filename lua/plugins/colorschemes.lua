@@ -1,5 +1,11 @@
 return {
     {
+        'projekt0n/github-nvim-theme',
+        lazy = false,
+        name = 'github',
+        priority = 1000,
+    },
+    {
         'projekt0n/caret.nvim',
         lazy = false,
         name = 'caret',
