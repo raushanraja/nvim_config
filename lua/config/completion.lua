@@ -28,8 +28,8 @@ local options = {
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
 
         -- Disable Tabs when needed
-        ["<Tab>"] = vim.NIL,
-        ["<S-Tab>"] = vim.NIL,
+        -- ["<Tab>"] = vim.NIL,
+        -- ["<S-Tab>"] = vim.NIL,
     },
 
     sources = {
