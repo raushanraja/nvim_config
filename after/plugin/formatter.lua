@@ -24,6 +24,8 @@ require("formatter").setup({
         python = { autoflake, python_formatter },
         javascript = { js_formatter },
         javascriptreact = { js_formatter },
+        typescript = { js_formatter },
+        typescriptreact = { js_formatter },
         rust = { rust_formatter }
     }
 })
